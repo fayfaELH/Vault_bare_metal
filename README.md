@@ -26,14 +26,14 @@ kubectl get pod -n vault
 kubectl logs -f vault-0 -n vault
 
 # To unseal the vault, we need to initialise the vault operator that will provide some Unseal keys that is going to be used to unseal the vault. Save the Unseal keys and Initial Root Token in a file for later use.
-# Unseal Key 1: fBgeKlqc5yMhPdof/YGYcY5ZOa9kKvhw7lFGh/NSvfpS
-# Unseal Key 2: jAvGUI5rrsDIlHd26KluJ2JU0hQX5Ia7EzMbxv/Jj6av
-# Unseal Key 3: 1JQv0L1yhl9cERcUMA0Magz4sCJ/lPBHseeRJFP20A2L
-# Unseal Key 4: tCBrx9dEnUrtFz2cfNO/AsGhENGLTDM4ugy1bqZe1JoL
-# Unseal Key 5: DW2tCWDdHRyNXbN6DulcQpKuhEMG5acYSkOU3G2pkCr9
-#
-# Initial Root Token: s.Yz4mBj1oSVkjKpF3HgZhLoXY
-#
+
+Unseal Key 1: qGFbYClC4l8qy7fqR+4cQfjmzd5EMsULgi0Fm7VK0Idn
+Unseal Key 2: 8A1OG6a1sEgTV3Nh1zpmQn+wodt/bsFT3bCrT86MYBWE
+Unseal Key 3: 5qW5HwdEn89rGUflArk0EjquUpu/r0/jVGdwv05unB4U
+Unseal Key 4: RcKft04YRPXJQZm0oIAmliuwSlqvbsNah0a4WL62+cgI
+Unseal Key 5: /DXVr7m9Qv+H+xh4KhSb0hS78AWGmMZBEfmK7XPVk7x5
+
+Initial Root Token: hvs.E3O1P7oc2PnIxAtJJ5iqAsJD
 # ............
 kubectl exec -ti vault-0 -n vault -- vault operator init
 
